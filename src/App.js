@@ -5,19 +5,25 @@ import Main from './components/main';
 import { HashRouter, Link } from 'react-router-dom';
 
 class App extends Component {
+  hideToggle() {
+    var selectorId = document.querySelector('.mdl-layout');
+    selectorId.MaterialLayout.toggleDrawer();
+  }
   render() {
     return (
       <HashRouter>
       <div className="demo-big-content">
     <Layout>
-      <Header className="header-color" title="Menu" scroll>
+      <Header style={{color: 'black'}} className="header-color" title="Menu">
         </Header>        
-          <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">Alex Simak Portfolio</Link>}>
+          <Drawer
+            ModalProps={{ onBackdropClick: this.toggleDrawer }} 
+            style={{color: 'black'}} title={<Link style={{textDecoration: 'none', color: 'black'}} to="/"onClick={() => this.hideToggle()}>Alex Simak Portfolio</Link>}>
               <Navigation>
-                <Link to="/resume">Resume</Link>
-                <Link to="/aboutme">About Me</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
+                <Link to={"/resume"} onClick={() => this.hideToggle()}>Resume</Link>
+                <Link to="/aboutme" onClick={() => this.hideToggle()}>About Me</Link>
+                <Link to="/projects" onClick={() => this.hideToggle()}>Projects</Link>
+                <Link to="/contact" onClick={() => this.hideToggle()}>Contact</Link>
               </Navigation>
           </Drawer>
         <Content>

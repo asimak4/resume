@@ -9,8 +9,10 @@ class About extends Component {
           <div className="aboutme-grid1">
             <h2> A Little About Me</h2>
           </div>
-        </h1> 
+        </h1>
+        
         <div className = "aboutme-black">
+        <hr style={{borderTop: '3px solid #e22947'}} /> 
           <p>I am currently a senior pursuing my bachelor’s degree in Computer Science with a minor 
           in mathematics at University of Maryland, Baltimore County. I am looking for an internship
           where I can grow my knowledge and expand my skills in software development. Recently, due to 
@@ -34,6 +36,8 @@ class About extends Component {
         IT intern in an office. I believe in the importance of being a team player, having the ability to follow directions, 
         and ensuring that projects are handled professionally. I possess excellent research, analytical and critical thinking 
         skills along with excellent writing and presentational skills.</p>
+        <hr style={{borderTop: '3px solid #e22947'}} /> 
+
         </div>
       </div>
     )

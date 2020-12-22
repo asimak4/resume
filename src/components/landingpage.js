@@ -6,15 +6,15 @@ class Landing extends Component {
   render() {
     return(
       <div style={{width: '100%', margin: 'auto'}}>
-        <Grid className="landing-grid">
+        <Grid style={{paddingTop:'8%'}}className="landing-grid">
           <Cell col={12}>
-
             <div className="banner-text">
               <p></p>
               <h1> Alex Simak </h1>
             <hr/>
-          <p> Senior at University of Maryland, Baltimore County pursuing a bachelor's degree in Computer Science and minor in Mathematics </p>
-
+          <p> 
+          Senior at University of Maryland, Baltimore County pursuing a bachelor's degree in Computer Science and minor in Mathematics 
+          </p>
         <div className="social-links">
 
           {/* LinkedIn */}

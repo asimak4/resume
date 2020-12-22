@@ -14,6 +14,8 @@ class Projects extends Component {
       return(
         <div className = "projects-grid">
           <List>
+                <hr style={{borderTop: '3px solid #e22947'}} /> 
+
                 <ListItem>
                   <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New', color: 'white'}}>
                   Car Scraping Project
@@ -23,13 +25,81 @@ class Projects extends Component {
                    selection process much more convenient and time efficient. (Python, BeautifulSoup, csvRequests)</p>
                 </ListItem> 
 
+                <ListItem>
+                <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New',color: '#fd1d1d'}}>
+                <i className="fa fa-connectdevelop" aria-hidden="true"/>  
+                </ListItemContent>
+                </ListItem>
+
+                <hr style={{borderTop: '3px solid #e22947'}} /> 
+
+
+                <ListItem>
+                <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New', color: 'white'}}>
+                Connect 4 Minimax
+                </ListItemContent>
+                <p style = {{color: 'white'}}>
+                  Connect 4 implemented by a game playing agent that allows you to play against a AI using Minimax or a random CPU, or another player. Console based
+                  user interface, and allows easy playablity.
+                </p>
+                </ListItem>
+
+                <ListItem>
+                <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New',color: '#fd1d1d'}}>
+                <i className="fa fa-gamepad" aria-hidden="true"/>  
+                </ListItemContent>
+                </ListItem>
+
+                <hr style={{borderTop: '3px solid #e22947'}} /> 
+
+                <ListItem>
+                <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New', color: 'white'}}>
+                Jug Problem
+                </ListItemContent>
+                <p style = {{color: 'white'}}>
+                Implemented BFS and DFS on a Jug problem with three jugs, based on user input. My implementation of the domain is able to handle different sized jugs.
+                Assuming the jugs will be size 1 or larger and will be whole numbers. The final output prints each node to the final path. 
+                </p>
+                </ListItem>
 
                 <ListItem>
                 <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New',color: '#fd1d1d'}}>
                 <i className="fa fa-code" aria-hidden="true"/>  
                 </ListItemContent>
                 </ListItem>
-                
+                <hr style={{borderTop: '3px solid #e22947'}} /> 
+                <ListItem>
+                <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New', color: 'white'}}>
+                Multi-Label Classification
+                </ListItemContent>
+                <p style = {{color: 'white'}}>
+                The purpose of this assignment is to implement some machine learning models on a income data set using random forest Classification.
+                The final prediction decides whether someone makes more than $50k or less than $50k.
+                </p>
+                </ListItem>
+
+                <ListItem>
+                <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New',color: '#fd1d1d'}}>
+                <i className="fa fa-bug" aria-hidden="true"/>  
+                </ListItemContent>
+                </ListItem>
+                <hr style={{borderTop: '3px solid #e22947'}} /> 
+                <ListItem>
+                <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New', color: 'white'}}>
+                Image Classification
+                </ListItemContent>
+                <p style = {{color: 'white'}}>
+                Predict whether or not the image sent through the model is a dog or a cat. Simple image classification using keras library and learning nueral networks. 
+                Basic introductory example to computer vision.  
+                </p>
+                </ListItem>
+
+                <ListItem>
+                <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton', color: '#fd1d1d'}}>
+                <i className="fa fa-file" aria-hidden="true"/>  
+                </ListItemContent>
+                </ListItem>
+                <hr style={{borderTop: '3px solid #e22947'}} /> 
                 <ListItem>
                 <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New', color: 'white'}}>
                 Stock Predictor
@@ -38,8 +108,7 @@ class Projects extends Component {
                  taking 10 years of data (or as long as the stock as has been around) and builds and trains a model to 
                   estimate an advanced price for that specified stock. Representing that data as a graph for the actual plot vs 
                 expected future plot. (Python,Pandas,MatPlot)</p>
-                
-                
+                                
                 </ListItem>
 
                 <ListItem>
@@ -47,7 +116,7 @@ class Projects extends Component {
                 <i className="fa fa-terminal" aria-hidden="true"/>  
                 </ListItemContent>
                 </ListItem>
-
+                <hr style={{borderTop: '3px solid #e22947'}} /> 
                 <ListItem>
                 <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New', color: 'white'}}>
                 Database Management Systems
@@ -62,9 +131,10 @@ class Projects extends Component {
                 <i className="fa fa-code-fork" aria-hidden="true"/>  
                 </ListItemContent>
                 </ListItem>
-
+                <hr style={{borderTop: '3px solid #e22947'}} /> 
                 <p>Others not listed.</p>
           </List>
+          <hr style={{borderTop: '3px solid #e22947'}} /> 
         </div>
 
 
@@ -73,6 +143,7 @@ class Projects extends Component {
       return (
         <div className="projects-grid">
           <List>
+          <hr style={{borderTop: '3px solid #e22947'}} /> 
           <ListItem>
             <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New', color: 'white'}}>
             Chess in C
@@ -92,7 +163,7 @@ class Projects extends Component {
             <i className="fa fa-code-fork" aria-hidden="true"/> 
           </ListItemContent>
           </ListItem>
-
+          <hr style={{borderTop: '3px solid #e22947'}} /> 
           <ListItem>
             <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New', color: 'white'}}>
             Sally Forth in C++
@@ -110,7 +181,7 @@ class Projects extends Component {
             <i className="fa fa-terminal" aria-hidden="true"/> 
           </ListItemContent>
           </ListItem>
-
+          <hr style={{borderTop: '3px solid #e22947'}} /> 
           <ListItem>
             <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New', color: 'white'}}>
             Tic Tac Toe in C
@@ -126,6 +197,7 @@ class Projects extends Component {
             <i className="fa fa-code" aria-hidden="true"/> 
           </ListItemContent>
           </ListItem>
+          <hr style={{borderTop: '3px solid #e22947'}} /> 
           <p>Others not listed.</p>
           </List>
         </div>
@@ -134,6 +206,7 @@ class Projects extends Component {
       return (
         <div className="projects-grid">
         <List>
+        <hr style={{borderTop: '3px solid #e22947'}} /> 
           <ListItem>
             <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New', color: 'white'}}>
             MERN with AWS
@@ -153,7 +226,7 @@ class Projects extends Component {
             <i className="fa fa-code-fork" aria-hidden="true"/> 
           </ListItemContent>
           </ListItem>
-
+          <hr style={{borderTop: '3px solid #e22947'}} /> 
           <ListItem>
             <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New', color: 'white'}}>
             Online Portfolio (This Website)
@@ -171,7 +244,7 @@ class Projects extends Component {
             <i className="fa fa-code" aria-hidden="true"/> 
           </ListItemContent>
           </ListItem>
-
+          <hr style={{borderTop: '3px solid #e22947'}} /> 
           </List>
           </div>
       )
