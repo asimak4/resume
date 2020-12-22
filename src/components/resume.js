@@ -8,24 +8,23 @@ import Skills from './skills';
 class Resume extends Component {
   render() {
     return(
-      <div>
+      <div className="resume-grid">
         <Grid>
           <Cell col={4}>
             <div style={{textAlign: 'center'}}>
-              <img
-                src="https://www.clipartkey.com/mpngs/m/279-2795926_recruit-resume-school-icon-for-resume.png"
-                alt="avatar"
+                <i
+                className = "fa fa-graduation-cap"
                 style={{height: '150px'}}
                  />
             </div>
 
             <h2 style={{paddingTop: '2em'}}>Alexander D Simak</h2>
-            <h4 style={{color: 'grey'}}>Software Engineer and Student</h4>
+            <h4 style={{color: 'white'}}>Software Engineer and Student</h4>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
             <h5>Phone</h5>
-            <p>(443) 474 0722 </p>
+            <p1>(443) 474 0722 </p1>
             <h5>Email</h5>
-            <p>asimak4@gmail.com</p>
+            <p1>asimak4@gmail.com</p1>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
           </Cell>
           <Cell className="resume-right-col" col={8}>

@@ -1,0 +1,1 @@
+npm run deploy -- automatically builds it for you and deploys it through git sites

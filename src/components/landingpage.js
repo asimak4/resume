@@ -13,7 +13,7 @@ class Landing extends Component {
               <p></p>
               <h1> Alex Simak </h1>
             <hr/>
-          <p> Senior at University of Maryland, Baltimore County pursuing a bachelor's degree in Computer Science and Mathematics </p>
+          <p> Senior at University of Maryland, Baltimore County pursuing a bachelor's degree in Computer Science and minor in Mathematics </p>
 
         <div className="social-links">
 

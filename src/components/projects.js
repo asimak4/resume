@@ -5,20 +5,20 @@ import { Tabs, Tab, Grid, Cell, List, ListItem, ListItemContent } from 'react-md
 class Projects extends Component {
   constructor(props) {
     super(props);
-    this.state = { activeTab: 0 };
+    this.state = { activeTab: 1 };
   }
 
   toggleCategories() {
 
-    if(this.state.activeTab === 0){
+    if(this.state.activeTab === 1){
       return(
         <div className = "projects-grid">
           <List>
                 <ListItem>
-                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New'}}>
+                  <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New', color: 'white'}}>
                   Car Scraping Project
                   </ListItemContent>
-                  <p>Developed a web scraper that automatically scraped a website, (Cars.com) using the BeautifulSoup Library to filter out
+                  <p style = {{color: 'white'}}>Developed a web scraper that automatically scraped a website, (Cars.com) using the BeautifulSoup Library to filter out
                    specific car requirements. It would then update the csv file and then send an email with new updated cars, which made the
                    selection process much more convenient and time efficient. (Python, BeautifulSoup, csvRequests)</p>
                 </ListItem> 
@@ -31,10 +31,10 @@ class Projects extends Component {
                 </ListItem>
                 
                 <ListItem>
-                <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New'}}>
+                <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New', color: 'white'}}>
                 Stock Predictor
                 </ListItemContent>
-                <p>Basic model which inputs any stocks data selected by the user, using panda’s library in python, 
+                <p style = {{color: 'white'}}>Basic model which inputs any stocks data selected by the user, using panda’s library in python, 
                  taking 10 years of data (or as long as the stock as has been around) and builds and trains a model to 
                   estimate an advanced price for that specified stock. Representing that data as a graph for the actual plot vs 
                 expected future plot. (Python,Pandas,MatPlot)</p>
@@ -49,10 +49,10 @@ class Projects extends Component {
                 </ListItem>
 
                 <ListItem>
-                <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New'}}>
+                <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New', color: 'white'}}>
                 Database Management Systems
                 </ListItemContent>
-                <p>Worked with a team to develop a database of the faculty members at the university and were able to 
+                <p style = {{color: 'white'}}>Worked with a team to develop a database of the faculty members at the university and were able to 
                   link the schema to a query language (SQL) using Python to access, update and administer the SQL tables created. 
                   Developed a minimal user interface using python that would let the user easily and functionally be able to access the data. (Python, SQL)</p>
                 </ListItem>
@@ -69,15 +69,15 @@ class Projects extends Component {
 
 
       )
-    } else if(this.state.activeTab === 1) {
+    } else if(this.state.activeTab === 2) {
       return (
         <div className="projects-grid">
           <List>
           <ListItem>
-            <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New'}}>
+            <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New', color: 'white'}}>
             Chess in C
             </ListItemContent>
-            <p>
+            <p style = {{color: 'white'}}>
             For this project, I worked very hard on the development of correctly moving the chess pieces, making sure that the user moves are valid, checking for mate and check, cpu moves are valid, and making sure that the user formatted the input correctly.
             I have layed out exactly how i developed and implemented the chess program in my design.pdf under my Github Chess program repository.
             For the CPU's random movement, I chose to implement it like this: Choosing a random piece to move, make then pick a random number out of that number of pieces, then randomely pick a destination of that piece, so i have the original location and where i am trying to move it. 
@@ -94,10 +94,10 @@ class Projects extends Component {
           </ListItem>
 
           <ListItem>
-            <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New'}}>
+            <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New', color: 'white'}}>
             Sally Forth in C++
             </ListItemContent>
-            <p>
+            <p style = {{color: 'white'}}>
             Build a compiler that starts off working with arithmetic operations, then
             expanding it to handle stack operations, variables, comparison and logical
             operators, if statements and loops 
@@ -112,10 +112,10 @@ class Projects extends Component {
           </ListItem>
 
           <ListItem>
-            <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New'}}>
+            <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New', color: 'white'}}>
             Tic Tac Toe in C
             </ListItemContent>
-            <p>
+            <p style = {{color: 'white'}}>
             Basic Tic Tac Toe module built in C, created to take in variuos inputs from the user, play against a player or cpu, implement mutex locking and basic operating system requirements.  
             </p>
 
@@ -130,15 +130,15 @@ class Projects extends Component {
           </List>
         </div>
       )
-    } else if(this.state.activeTab === 2) {
+    } else if(this.state.activeTab === 3) {
       return (
         <div className="projects-grid">
         <List>
           <ListItem>
-            <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New'}}>
+            <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New', color: 'white'}}>
             MERN with AWS
             </ListItemContent>
-            <p>
+            <p style = {{color: 'white'}}> 
             Created a simple website using HTML/CSS and ReactJS framework. 
             The website took in user input (login information) and was able to link the 
             information with the database which either allowed or denied user permission to the application. 
@@ -155,10 +155,10 @@ class Projects extends Component {
           </ListItem>
 
           <ListItem>
-            <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New'}}>
+            <ListItemContent style={{fontSize: '30px', fontFamily: 'Courier New', color: 'white'}}>
             Online Portfolio (This Website)
             </ListItemContent>
-            <p>
+            <p style = {{color: 'white'}}>
             Developed this simple website using HTML/CSS and ReactJS/NodeJS framework. 
             Using only basic CSS/HTML, without any preloaded libraries, Built to show my projects and experience levels, a bit about me 
             and a way to contact me to get to know me better! :) 
@@ -183,22 +183,16 @@ class Projects extends Component {
 
   render() {
     return(
-      <div>
+      <div className="projects-grid-whole-page">
         <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+          <Tab></Tab>
           <Tab>Python</Tab>
-          <Tab>C and C++</Tab>
-          <Tab>Javascript/React</Tab>
+          <Tab>C/C++</Tab>
+          <Tab>FrontEnd</Tab>
         </Tabs>
-
-
-          <Grid>
-            <Cell col={12}>
-              <div className="content">{this.toggleCategories()}</div>
-            </Cell>
-          </Grid>
-
-
+        <div>{this.toggleCategories()}</div>
       </div>
+               
     )
   }
 }

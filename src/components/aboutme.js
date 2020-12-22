@@ -6,18 +6,17 @@ class About extends Component {
     return(
       <div className="aboutme-grid">
         <h1>
-        <div className="aboutme-grid1">
-        <i className="fa fa-user" aria-hidden="true" />
-        A Little About Me
-        <i className="fa fa-user" aria-hidden="true" />
-        </div>
+          <div className="aboutme-grid1">
+            <h2> A Little About Me</h2>
+          </div>
         </h1> 
-        <p>I am currently a senior pursuing my bachelor’s degree in Computer Science with a minor 
-        in mathematics at University of Maryland, Baltimore County. I am looking for an internship
-        where I can grow my knowledge and expand my skills in software development. Recently, due to 
-        the Covid-19 virus, my software engineering internship got canceled and I have lost the opportunity 
-        to gain real-world experience. I believe this type of on-site work is extremely valuable, which is
-        why I am pursuing this opportunity.</p>
+        <div className = "aboutme-black">
+          <p>I am currently a senior pursuing my bachelor’s degree in Computer Science with a minor 
+          in mathematics at University of Maryland, Baltimore County. I am looking for an internship
+          where I can grow my knowledge and expand my skills in software development. Recently, due to 
+          the Covid-19 virus, my software engineering internship got canceled and I have lost the opportunity 
+          to gain real-world experience. I believe this type of on-site work is extremely valuable, which is
+          why I am pursuing this opportunity.</p>
         <i className="fa fa-star" aria-hidden="true" />
 
         <p>Throughout my college experience so far, I have had a multitude of various opportunities to gain skills
@@ -35,6 +34,7 @@ class About extends Component {
         IT intern in an office. I believe in the importance of being a team player, having the ability to follow directions, 
         and ensuring that projects are handled professionally. I possess excellent research, analytical and critical thinking 
         skills along with excellent writing and presentational skills.</p>
+        </div>
       </div>
     )
   }
