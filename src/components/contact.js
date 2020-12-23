@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
+import { Grid, Cell, List, ListItem, ListItemContent, Icon } from 'react-mdl';
 class Contact extends Component {
   render() {
     return(
@@ -21,20 +21,17 @@ class Contact extends Component {
 
             <div className="contact-list">
               <List>
-                <ListItem>
-                  <ListItemContent style={{display:'flex', justifyContent:'center',fontSize: '100%', fontFamily: 'Anton',alignSelf:"auto"}}>
-                    <i className="fa fa-phone-square" aria-hidden="true"/>
+                <ListItem> 
+                  <ListItemContent icon = "phone_iphone"  style={{display:'flex', justifyContent:'center',fontSize: '150%', fontFamily: 'Anton'}}>
                     (443)-474-0722
                   </ListItemContent>
                 </ListItem>
 
                 <ListItem>
-                  <ListItemContent style={{display:'flex', justifyContent:'center',fontSize: '100%', fontFamily: 'Anton'}}>
-                    <i className="fa fa-envelope" aria-hidden="true"/>
+                  <ListItemContent icon = "email" style={{display:'flex', justifyContent:'center',fontSize: '150%', fontFamily: 'Anton'}}>
                       asimak4@gmail.com
                   </ListItemContent>
                 </ListItem>
-
 
               </List>
             </div>
