@@ -32,11 +32,11 @@ class Landing extends Component {
         
             </div>
 
-            <img
+             <img
               src = {require('./monkey.png')}
               alt = ""
               className="avatar-img"
-              />
+              /> 
 
           </Cell>
           

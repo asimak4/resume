@@ -34,7 +34,7 @@ class Resume extends Component {
               />
 
                <Education
-                 startYear={"August 2014"}
+                 startYear={"August 2013"}
                  endYear={"May 2017"}
                  schoolName="Mount Hebron High School"
                  schoolDescription="General Studies High School Diploma GPA: 3.87"
