@@ -50,6 +50,31 @@
   display: flex;
   /*overflow:scroll*/
 }
+.projects-grid i {
+  color:red;
+  font-size: 150%;
+}
+
+.projects-grid ListItemContent{
+  display: flex;
+  justify-content: center;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.projects-grid a{
+  display: flex;
+  justify-content: center;
+  font-size: 200%;
+  font-family: 'Courier New', Courier, monospace;
+  color:rgb(211, 53, 79);
+}
+
+.projects-grid p{
+  padding-top:2%;
+  font-size: 100%;
+  color: white;
+}
 
 .projects-grid-whole-page{
   background-size: 100%;

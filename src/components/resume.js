@@ -20,12 +20,7 @@ class Resume extends Component {
 
             <h2 style={{paddingTop: '2em'}}>Alexander D Simak</h2>
             <h4 style={{color: 'Grey'}}>Software Engineer and Student</h4>
-            <hr style={{borderTop: '3px solid', width: '50%'}}/>
-            <h5>Phone</h5>
-            <p1>(443) 474 0722 </p1>
-            <h5>Email</h5>
-            <p1>asimak4@gmail.com</p1>
-            <hr style={{borderTop: '3px solid', width: '50%'}}/>
+            <hr style={{borderTop: '4px solid', width: '65%'}}/>
           </Cell>
           <Cell className="resume-right-col" col={8}>
             <h2>Education</h2>
